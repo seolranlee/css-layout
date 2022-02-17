@@ -1,11 +1,9 @@
 .father {
-  /* flex container: 바로 붙어 있는 부모에 지정해줘야 한다. */
-  /* 항상 붙어있는 부모가 자식의 위치를 움직일 수 있다. */
   display: flex;
-  /* Main Axis: flex-direction: column에서는 세로축 */
   justify-content: space-around;
+  align-content: space-between;
   height: 100vh;
-  font-size: 50px;
+  flex-wrap: wrap;
 }
 
 .child {
@@ -14,27 +12,9 @@
   background-color: peru;
   color: white;
   text-align: center;
+  font-size: 50px;
+  /* 안에 텍스트가 수직/수평 가운데 오게 하기 위해 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.child:nth-child(1) {
-  /* HTML의 변경 없이 순서 변경 */
-  /* default order는 0 */
-  order: 2;
-  align-self: center;
-}
-
-.child:nth-child(2) {
-  /* HTML의 변경 없이 순서 변경 */
-  /* default order는 0 */
-  order: 3;
-}
-
-/* .child:nth-child(2) {
-  자식에게 align-items속성을 단독적으로 적용하고 싶을 때
-  align-self: center;
-} */
-
-/* .child:nth-child(3) {
-  자식에게 align-items속성을 단독적으로 적용하고 싶을 때
-  align-self: flex-end;
-} */

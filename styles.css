@@ -1,0 +1,13 @@
+.wrapper {
+  /* flex container: 바로 붙어 있는 부모에 지정해줘야 한다. */
+  /* 항상 붙어있는 부모가 자식의 위치를 움직일 수 있다. */
+  display: flex;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: peru;
+  color: white;
+  text-align: center;
+}

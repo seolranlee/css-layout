@@ -3,16 +3,16 @@
   /* 항상 붙어있는 부모가 자식의 위치를 움직일 수 있다. */
   display: flex;
   /* default */
-  flex-direction: row;
-  /* Main Axis: flex-direction: row에서는 가로축 */
+  flex-direction: column;
+  /* Main Axis: flex-direction: column에서는 세로축 */
   justify-content: space-around;
-  /* Cross Axis: flex-direction: row에서는 세로축 */
-  align-items: center;
+  /* Cross Axis: flex-direction: column에서는 가로축 */
+  align-items: stretch;
   height: 100vh;
 }
 
 .box {
-  width: 200px;
+  /* width: 200px; */
   height: 200px;
   background-color: peru;
   color: white;

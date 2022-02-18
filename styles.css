@@ -1,13 +1,11 @@
 .father {
   display: flex;
-  justify-content: space-around;
-  align-content: space-between;
-  height: 100vh;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .child {
-  width: 200px;
+  width: 300px;
   height: 200px;
   background-color: peru;
   color: white;
@@ -17,4 +15,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.child:nth-child(2) {
+  background-color: #000;
+  /* 1이 기본값. 2로 하면 2배로 더 줄어든다. */
+  flex-shrink: 3;
+}
+
+.child:nth-child(3) {
+  flex-shrink: 2;
 }

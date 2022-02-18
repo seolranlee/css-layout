@@ -19,10 +19,11 @@
 
 .child:nth-child(2) {
   background-color: #000;
-  /* 1이 기본값. 2로 하면 2배로 더 줄어든다. */
-  flex-shrink: 3;
+  /* 남아 있는 공간의 2/3을 가져간다. */
+  flex-grow: 2;
 }
 
 .child:nth-child(3) {
-  flex-shrink: 2;
+  /* 남아 있는 공간의 1/3을 가져간다. */
+  flex-grow: 1;
 }

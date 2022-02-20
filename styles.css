@@ -1,16 +1,11 @@
 .father {
   display: flex;
-  /* Main Axis */
-  justify-content: space-around;
-  height: 100vh;
   flex-wrap: wrap;
-  /* align-content: line에 대한 것(줄 간격) */
-  align-content: space-between;
+  justify-content: space-between;
 }
 
 .child {
-  width: 200px;
-  height: 200px;
+  flex-basis: 30%;
   background-color: peru;
   color: white;
   text-align: center;
@@ -19,4 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.child:nth-child(4){
+  margin-top: 10px;
 }

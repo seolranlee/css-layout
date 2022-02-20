@@ -23,7 +23,7 @@
 - [x] grid-row-gap
 - [x] grid-gap
 - [x] grid-template-areas
-- [ ] grid-template
+- [x] grid-template
 - [ ] justify-items
 - [ ] align-items
 - [ ] justify-content

@@ -10,26 +10,31 @@
 .header {
   background-color: #2ecc71;
   /* column들 사이의 빈 공간 line숫자를 의미. */
-  grid-column-start: 1;
-  grid-column-end: 5;
+  /* grid-column-start: 1;
+  grid-column-end: 5; */
+  grid-column: 1 / 5;
 }
 
 .content {
   background-color: #3498db;
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
 }
 
 .nav {
   background-color: #8e44ad;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+  grid-row: 2 / 4;
 }
 
 .footer {
   background-color: #f39c12;
-  grid-column-start: 1;
-  grid-column-end: 5;
+  /* grid-column-start: 1;
+  grid-column-end: 5; */
+  grid-column: 1 / 5;
 }

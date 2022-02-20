@@ -2,15 +2,15 @@
   display: flex;
   /* Main Axis */
   justify-content: space-around;
-  width: 100%;
   height: 100vh;
+  flex-wrap: wrap;
+  /* align-content: Cross Axis 대한 것 */
+  align-content: space-between;
 }
 
 .child {
-  /* flex-basis: element에게 처음 크기를 주는 것. */
-  /* 모든게 찌그러지거나 늘어나기 전에 설정하는 값. 처음 크기지만 실제 크기는 아니다. */
-  /* Main Axis에 따라 width가 되기도, height가 되기도. */
-  flex-basis: 20%;
+  width: 200px;
+  height: 200px;
   background-color: peru;
   color: white;
   text-align: center;
@@ -19,12 +19,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.child:nth-child(2) {
-  background-color: #000;
-  flex-grow: 1;
-}
-
-.child:nth-child(3) {
 }

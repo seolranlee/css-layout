@@ -10,29 +10,23 @@
 .header {
   background-color: #2ecc71;
   /* column들 사이의 빈 공간 line숫자를 의미. */
-  grid-column: 1 / 5;
+  /* 처음부터 끝(-1)을 의미함: 끝이 몇 라인인지 알 필요 없다. */
+  grid-column: 1 / -1;
 }
 
 .content {
   background-color: #3498db;
-  /* grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 4; */
-  grid-column: 1 / 4;
+  /* 처음부터 끝(-1) 이전(-2) */
+  grid-column: 1 / -2;
   grid-row: 2 / 4;
 }
 
 .nav {
   background-color: #8e44ad;
-  /* grid-row-start: 2;
-  grid-row-end: 4; */
   grid-row: 2 / 4;
 }
 
 .footer {
   background-color: #f39c12;
-  /* grid-column-start: 1;
-  grid-column-end: 5; */
-  grid-column: 1 / 5;
+  grid-column: 1 / -1;
 }

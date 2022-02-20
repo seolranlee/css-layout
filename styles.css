@@ -8,9 +8,10 @@
   /* best shortcut */
   grid-template: 
     /* cell의 이름, row의 높이 / 각 column의 너비 */
-    "header header header header" 1fr
-    "content content content nav" 2fr
-    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr
+    [header-start] "header header header header" 1fr [header-end]
+    [content-start] "content content content nav" 2fr [content-end]
+    /* grid-template 내에서는 repeat는 동작하지 않는다. */
+    [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr
   ;
 }
 

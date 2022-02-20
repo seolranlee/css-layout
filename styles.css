@@ -1,12 +1,16 @@
 .father {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* Main Axis */
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
 }
 
 .child {
-  width: 300px;
-  height: 200px;
+  /* flex-basis: element에게 처음 크기를 주는 것. */
+  /* 모든게 찌그러지거나 늘어나기 전에 설정하는 값. 처음 크기지만 실제 크기는 아니다. */
+  /* Main Axis에 따라 width가 되기도, height가 되기도. */
+  flex-basis: 20%;
   background-color: peru;
   color: white;
   text-align: center;
@@ -19,11 +23,8 @@
 
 .child:nth-child(2) {
   background-color: #000;
-  /* 남아 있는 공간의 2/3을 가져간다. */
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 .child:nth-child(3) {
-  /* 남아 있는 공간의 1/3을 가져간다. */
-  flex-grow: 1;
 }

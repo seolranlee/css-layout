@@ -4,7 +4,7 @@
   justify-content: space-around;
   height: 100vh;
   flex-wrap: wrap;
-  /* align-content: Cross Axis 대한 것 */
+  /* align-content: line에 대한 것(줄 간격) */
   align-content: space-between;
 }
 

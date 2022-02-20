@@ -1,22 +1,22 @@
 .grid {
+  background-color: tomato;
   display: grid;
   gap: 5px;
-  height: 50vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  /* justify-items, align-itmes: grid container(father)에 있는 속성 */
-  
-  /* 수평 속성 */
-  /* default: strecth: 모든 grid container는 자식을 가지고 있고 그 자식들을 늘려서 본인을 채우게 한다 */
-  /* justify-items: stretch; */
-  /* justify-items: end; */
-  
-  /* 수직 속성 */
-  /* default: strecth */
-  /* align-items: end; */
+  height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  /* items: cell중에 하나. 각각 하나 하나 */
+  /* content: 전체 grid */
 
-  /* short cut: place-items: y x */
-  place-items: stretch center;
+  /* grid를 center에 둔다(grid container가 아님) */
+  /* grid의 수평정렬 */
+  /* justify-content: space-between; */
+
+  /* gird의 수직정렬 */
+  /* align-content: space-between; */
+
+  /* place-content: y x */
+  place-content: end center;
 }
 
 .header {

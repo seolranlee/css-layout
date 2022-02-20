@@ -1,20 +1,38 @@
-/* grid design은 father에서 이루어진다. */
-.father {
+.grid {
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 100px 50px 300px;
-  /* column-gap: 10px;
-  row-gap: 10px; */
-  gap: 10px;
+  /* grid-template-columns: repeat(4, 200px); */
+  /* auto 200px auto auto 이런식으로 적용 */
+  grid-template-columns: auto 200px;
+  grid-template-rows: 100px repeat(2, 200px) 100px;
+  /* layout design을 위한 멋진 속성 */
+  /* .을 쓴다면: 빈 공간이 된다 */
+  grid-template-areas: 
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
 }
 
-.child {
-  background-color: peru;
-  color: white;
-  text-align: center;
-  font-size: 50px;
-  /* 안에 텍스트가 수직/수평 가운데 오게 하기 위해 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+  background-color: #2ecc71;
+  /* grid-area: grid-template-areas에 쓴 이름과 같아야 한다 */
+  grid-area: header;
+}
+
+.content {
+  background-color: #3498db;
+  /* grid-area: grid-template-areas에 쓴 이름과 같아야 한다 */
+  grid-area: content;
+}
+
+.nav {
+  background-color: #8e44ad;
+  /* grid-area: grid-template-areas에 쓴 이름과 같아야 한다 */
+  grid-area: nav;
+}
+
+.footer {
+  background-color: #f39c12;
+  /* grid-area: grid-template-areas에 쓴 이름과 같아야 한다 */
+  grid-area: footer;
 }

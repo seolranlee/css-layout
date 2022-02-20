@@ -11,22 +11,27 @@
   background-color: #2ecc71;
   /* column들 사이의 빈 공간 line숫자를 의미. */
   /* 처음부터 끝(-1)을 의미함: 끝이 몇 라인인지 알 필요 없다. */
-  grid-column: 1 / -1;
+  grid-column: span 4;
 }
 
 .content {
   background-color: #3498db;
   /* 처음부터 끝(-1) 이전(-2) */
   grid-column: 1 / -2;
-  grid-row: 2 / 4;
+  /* 2라인부터 시작해서 span 2를 적용 */
+  /* grid-row: 2 / span 2; */
+  grid-row: span 2;
 }
 
 .nav {
   background-color: #8e44ad;
-  grid-row: 2 / 4;
+  /* grid-row: 2 / 4; */
+  grid-row: span 2;
 }
 
 .footer {
   background-color: #f39c12;
-  grid-column: 1 / -1;
+  /* span: 시작점과 끝점을 적는 걸 대신한다. */
+  /* 4개의 셀을 가진다. */
+  grid-column: span 4;
 }
